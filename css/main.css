@@ -125,6 +125,10 @@ h1 {
     font-size: 1.5em;
 }
 
+.title-sep {
+    margin-left: 3px;
+}
+
 .top-section {
     height: 24.1em;
 }
@@ -143,20 +147,27 @@ h2 {
     text-shadow: 1px 1px 1px #B1D8D8;
 }
 
-h3 {
+h3, .smalltext {
     font-size: 0.9em;
     color: #5F5F5F;
+    font-weight: bold;
 }
 
 .signup-overlay {
     position: absolute;
     background: white;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     border-top: 0px;
     width: 21em;
     top: 0;
-    left: 50%;
-    height: 28em;
+    left: 51%;
+    height: 21em;
+    padding: 0 20px;
+    padding-top: 4.2em;
+    background-color: #FBB77F;
+    background-image: url("../img/tile.png");
+    background-repeat: repeat;
+    text-align: center;
 }
 
 .hp-l, .hp-r {
@@ -239,30 +250,52 @@ h3 {
 }
 
 
+.form-input {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    text-indent: 2%;
+    border: 1px solid #ABB0B2;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
 
+.form-label {
+    text-align: left;
+    display: block;
+}
+
+.mc-field-group {
+    padding-bottom: 1em;
+}
+
+#mc-embedded-subscribe {
+    margin-top: 7px;
+}
 
 
 
 .button {
-    width: 12em;
+    width: 21em !important;
    border: 1px solid #000000;
-   background: #b85d12;
-   background: -webkit-gradient(linear, left top, left bottom, from(#ff7e14), to(#b85d12));
-   background: -webkit-linear-gradient(top, #ff7e14, #b85d12);
-   background: -moz-linear-gradient(top, #ff7e14, #b85d12);
-   background: -ms-linear-gradient(top, #ff7e14, #b85d12);
-   background: -o-linear-gradient(top, #ff7e14, #b85d12);
-   background-image: -ms-linear-gradient(top, #ff7e14 0%, #b85d12 100%);
-   padding: 11px 22px;
+   background: #007a7a;
+   background: -webkit-gradient(linear, left top, left bottom, from(#27b3a0), to(#007a7a));
+   background: -webkit-linear-gradient(top, #27b3a0, #007a7a);
+   background: -moz-linear-gradient(top, #27b3a0, #007a7a);
+   background: -ms-linear-gradient(top, #27b3a0, #007a7a);
+   background: -o-linear-gradient(top, #27b3a0, #007a7a);
+   background-image: -ms-linear-gradient(top, #27b3a0 0%, #007a7a 100%);
+   padding: 10.5px 21px;
    -webkit-border-radius: 6px;
    -moz-border-radius: 6px;
    border-radius: 6px;
-   -webkit-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
-   -moz-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
-   box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
    text-shadow: #000000 0 1px 0;
    color: #ffffff;
-   font-size: 15px;
+   font-size: 14px;
    font-family: helvetica, serif;
    text-decoration: none;
    vertical-align: middle;
@@ -270,25 +303,26 @@ h3 {
 .button:hover {
    border: 1px solid #000000;
    text-shadow: #000000 0 1px 0;
-   background: #b85d12;
-   background: -webkit-gradient(linear, left top, left bottom, from(#ffa052), to(#b85d12));
-   background: -webkit-linear-gradient(top, #ffa052, #b85d12);
-   background: -moz-linear-gradient(top, #ffa052, #b85d12);
-   background: -ms-linear-gradient(top, #ffa052, #b85d12);
-   background: -o-linear-gradient(top, #ffa052, #b85d12);
-   background-image: -ms-linear-gradient(top, #ffa052 0%, #b85d12 100%);
+   background: #2c8282;
+   background: -webkit-gradient(linear, left top, left bottom, from(#21b89f), to(#2c8282));
+   background: -webkit-linear-gradient(top, #21b89f, #2c8282);
+   background: -moz-linear-gradient(top, #21b89f, #2c8282);
+   background: -ms-linear-gradient(top, #21b89f, #2c8282);
+   background: -o-linear-gradient(top, #21b89f, #2c8282);
+   background-image: -ms-linear-gradient(top, #21b89f 0%, #2c8282 100%);
    color: #fff;
+   cursor: pointer;
    }
 .button:active {
    text-shadow: #000000 0 1px 0;
    border: 1px solid #000000;
-   background: #ffa052;
-   background: -webkit-gradient(linear, left top, left bottom, from(#b85d12), to(#b85d12));
-   background: -webkit-linear-gradient(top, #b85d12, #ffa052);
-   background: -moz-linear-gradient(top, #b85d12, #ffa052);
-   background: -ms-linear-gradient(top, #b85d12, #ffa052);
-   background: -o-linear-gradient(top, #b85d12, #ffa052);
-   background-image: -ms-linear-gradient(top, #b85d12 0%, #ffa052 100%);
+   background: #1aa38a;
+   background: -webkit-gradient(linear, left top, left bottom, from(#2c8282), to(#2c8282));
+   background: -webkit-linear-gradient(top, #2c8282, #1aa38a);
+   background: -moz-linear-gradient(top, #2c8282, #1aa38a);
+   background: -ms-linear-gradient(top, #2c8282, #1aa38a);
+   background: -o-linear-gradient(top, #2c8282, #1aa38a);
+   background-image: -ms-linear-gradient(top, #2c8282 0%, #1aa38a 100%);
    color: #fff;
    }
 
