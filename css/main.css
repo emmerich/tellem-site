@@ -89,27 +89,208 @@ textarea {
    ========================================================================== */
 
 body {
+    font-family: 'Palanquin', Helvetica, Arial, sans-serif;
     margin: 0;
 }
 
-header {
+.orange {
+    color: #FFA052;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.site-title-text {
+    font-size: 3em;
+    margin: 0 auto;
+    width: 2.2em;
+}
+
+.top-bar {
+    top: 0px;
+    height: 2.4em;
+    /*background-color: #0A2D8B;*/
+    /*background-image: url("http://www.gannett-cdn.com/static/images/patterns/noise.png");*/
+
+    background-color: #10C5C5;
+    background-image: url("../img/tile.png");
+    background-repeat: repeat;
+
+    padding: 0 200px;
+}
+h1 {
+    /*color: #2654D0;*/
+    /*text-shadow: 1px 1px 2px #BCC7E6;*/
+    color: white;
+    margin: 0;
+    display: inline-block;
+    font-size: 1.5em;
+}
+
+.top-section {
+    height: 24.1em;
+}
+
+.top-section, .bottom-section {
+    padding: 30px 200px;
+    background-color: white;
+    background-image: url("../img/tile.png");
+    background-repeat: repeat;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #007C7C;
+    text-shadow: 1px 1px 1px #B1D8D8;
+}
+
+h3 {
+    font-size: 0.9em;
+    color: #5F5F5F;
+}
+
+.signup-overlay {
+    position: absolute;
+    background: white;
+    border: 1px solid black;
+    border-top: 0px;
+    width: 21em;
+    top: 0;
+    left: 50%;
+    height: 28em;
+}
+
+.hp-l, .hp-r {
+    width: 50%;
+    display: inline-block;
+    height: 20px;
+}
+
+.hp-r {
+    left: 50%;
+}
+
+.signup, .bottom-section {
+    background-color: #10C5C5;
+    background-image: url("../img/tile.png");
+    background-repeat: repeat;
+
+    padding: 0 200px;
+    height: 13em;
+    padding-top: 0.8em;
+}
+
+
+.signup-button {
+    background-color:white;
+    border:1px solid;
+    display:inline-block;
+    cursor:pointer;
+    color:#000000;
+    font-size:15px;
+    font-weight:bold;
+    padding:4px 24px;
+    height: 2.4em;
+}
+
+.quick-look {
+    height: 10em;
+}
+
+.signup-form {
     width: 100%;
-    height: 5em;
-    background-color: #fff;
+    font-size: 1.17em;
 }
 
-section {
+.signup-email {
+    width: 60%;
+    font-size: 0.9em;
+    height: 31px;
+    margin-right: 5px;
+}
+
+.signup-button {
+    font-size: 0.9em;
+    width: 30%;
+}
+
+
+.quick-features {
     width: 100%;
 }
 
-.site-title {
-    font-family: cursive;
+.feature {
+    width: 33%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.feature-inner {
+    margin: 0px 20px;
+}
+
+.feature > h2 {
+    top: 0px;
+}
+
+.separator {
+    background-color: #022636;
+    width: 100%;
+    height: 2px;
 }
 
 
 
 
 
+
+.button {
+    width: 12em;
+   border: 1px solid #000000;
+   background: #b85d12;
+   background: -webkit-gradient(linear, left top, left bottom, from(#ff7e14), to(#b85d12));
+   background: -webkit-linear-gradient(top, #ff7e14, #b85d12);
+   background: -moz-linear-gradient(top, #ff7e14, #b85d12);
+   background: -ms-linear-gradient(top, #ff7e14, #b85d12);
+   background: -o-linear-gradient(top, #ff7e14, #b85d12);
+   background-image: -ms-linear-gradient(top, #ff7e14 0%, #b85d12 100%);
+   padding: 11px 22px;
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   border-radius: 6px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   text-shadow: #000000 0 1px 0;
+   color: #ffffff;
+   font-size: 15px;
+   font-family: helvetica, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   border: 1px solid #000000;
+   text-shadow: #000000 0 1px 0;
+   background: #b85d12;
+   background: -webkit-gradient(linear, left top, left bottom, from(#ffa052), to(#b85d12));
+   background: -webkit-linear-gradient(top, #ffa052, #b85d12);
+   background: -moz-linear-gradient(top, #ffa052, #b85d12);
+   background: -ms-linear-gradient(top, #ffa052, #b85d12);
+   background: -o-linear-gradient(top, #ffa052, #b85d12);
+   background-image: -ms-linear-gradient(top, #ffa052 0%, #b85d12 100%);
+   color: #fff;
+   }
+.button:active {
+   text-shadow: #000000 0 1px 0;
+   border: 1px solid #000000;
+   background: #ffa052;
+   background: -webkit-gradient(linear, left top, left bottom, from(#b85d12), to(#b85d12));
+   background: -webkit-linear-gradient(top, #b85d12, #ffa052);
+   background: -moz-linear-gradient(top, #b85d12, #ffa052);
+   background: -ms-linear-gradient(top, #b85d12, #ffa052);
+   background: -o-linear-gradient(top, #b85d12, #ffa052);
+   background-image: -ms-linear-gradient(top, #b85d12 0%, #ffa052 100%);
+   color: #fff;
+   }
 
 
 
