@@ -130,7 +130,7 @@ h1 {
 }
 
 .top-section {
-    height: 24.1em;
+    height: 21em;
 }
 
 .top-section, .bottom-section, .how-it-works {
@@ -277,6 +277,12 @@ h3, .smalltext {
 .arrow-img {
   display: block;
   margin: 0 auto;
+    padding-right: 130px;
+    height: 115px;
+}
+
+.how-it-works {
+    height: 13em;
 }
 
 .button {
@@ -349,6 +355,18 @@ h3, .smalltext {
     
     font-size: 2em;
     line-height: 0.9em;
+    display: inline-block;
+}
+
+.step {
+    display: inline-block;
+    width: 33%;
+}
+
+.step-header {
+    width: 70%;
+    margin-left: 10px;
+    display: inline-block;
 }
 
 
