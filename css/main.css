@@ -100,8 +100,6 @@ h1 {
     font-family: "Palanquin", Arial, sans-serif;
     margin: 0;
     display: inline-block;
-    color: #FF9901;
-    text-shadow: 1px 1px 1px #462810;
 }
 
 h2 {
@@ -112,23 +110,27 @@ h2 {
 
 .h2-lbg {
     color: #150C82;
-    text-shadow: 1px 1px 1px #A5A7A7;
+    text-shadow: 1px 1px 1px #B7B1FF;
 }
 
 .h2-dbg {
-    color: #FFB74D;
-    text-shadow: 1px 1px 1px black;
+    color: #150C82;
+    text-shadow: 1px 1px 1px #B7B1FF;
 }
 
 h3, .smalltext {
     font-size: 0.9em;
 
-    color: #5F5F5F;
+    color: #000;
     font-weight: normal;
 }
 
 .whitetext {
-    color: #BDB0B0;
+    color: black;
+}
+
+.bg {
+    background-color: #D2EDF5;
 }
 
 .grain-effect {
@@ -146,7 +148,6 @@ h3, .smalltext {
 
 .top-bar {
     height: 38px;
-    background-color: #150C82;
 }
 
 .title-sep {
@@ -182,7 +183,6 @@ h3, .smalltext {
 
     height: 360px;
     
-    background-color: #150C82;
     text-align: center;
 }
 
@@ -220,7 +220,7 @@ h3, .smalltext {
 .button {
     width: 100%;
     border: 1px solid #5F5F5F;
-    background: #FF9800;
+    background: #FFDF95;
     padding: 10.5px 21px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
@@ -245,10 +245,7 @@ h3, .smalltext {
     height: 1em;
     padding: 8px;
     
-    color: #fff;
-    text-shadow: #000000 1px 1px 1px;
     text-align: center;
-    background-color: #150C82;
     
     font-size: 2em;
     line-height: 1em;
