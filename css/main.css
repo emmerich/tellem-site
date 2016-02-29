@@ -266,8 +266,8 @@ section.how-it-works {
    vertical-align: middle;
    }
 .button:hover {
-   border: 1px solid #000000;
-   text-shadow: #000000 0 1px 0;
+   border: 1px solid #5F5F5F;
+  text-shadow: #000000 1px 1px 1px;
    background: #2c8282;
    background: -webkit-gradient(linear, left top, left bottom, from(#21b89f), to(#2c8282));
    background: -webkit-linear-gradient(top, #21b89f, #2c8282);
@@ -279,8 +279,8 @@ section.how-it-works {
    cursor: pointer;
    }
 .button:active {
-   text-shadow: #000000 0 1px 0;
-   border: 1px solid #000000;
+   text-shadow: #000000 1px 1px 1px;
+   border: 1px solid #5F5F5F;
    background: #1aa38a;
    background: -webkit-gradient(linear, left top, left bottom, from(#2c8282), to(#2c8282));
    background: -webkit-linear-gradient(top, #2c8282, #1aa38a);
