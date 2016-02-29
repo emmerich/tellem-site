@@ -91,53 +91,15 @@ textarea {
 body {
     font-family: 'Palanquin', Helvetica, Arial, sans-serif;
     margin: 0;
+    min-width: 870px;
 }
 
-.orange {
-    color: #FFA052;
-    text-shadow: 2px 2px 2px #000;
-}
-
-.site-title-text {
-    font-size: 3em;
-    margin: 0 auto;
-    width: 2.2em;
-}
-
-.top-bar {
-    top: 0px;
-    height: 2.4em;
-    /*background-color: #0A2D8B;*/
-    /*background-image: url("http://www.gannett-cdn.com/static/images/patterns/noise.png");*/
-
-    background-color: #10C5C5;
-    background-image: url("../img/tile.png");
-    background-repeat: repeat;
-
-    padding: 0 200px;
-}
 h1 {
-    /*color: #2654D0;*/
-    /*text-shadow: 1px 1px 2px #BCC7E6;*/
-    color: white;
     margin: 0;
     display: inline-block;
     font-size: 1.5em;
-}
-
-.title-sep {
-    margin-left: 3px;
-}
-
-.top-section {
-    height: 21em;
-}
-
-.top-section, .bottom-section, .how-it-works {
-    padding: 30px 200px;
-    background-color: white;
-    background-image: url("../img/tile.png");
-    background-repeat: repeat;
+    color: #FFA052;
+    text-shadow: 2px 2px 2px #000;
 }
 
 h2 {
@@ -147,27 +109,58 @@ h2 {
     text-shadow: 1px 1px 1px #B1D8D8;
 }
 
+/* auto margin on outside, not px */
+
 h3, .smalltext {
     font-size: 0.9em;
     color: #5F5F5F;
     font-weight: bold;
 }
 
+.grain-effect {
+  background-image: url("../img/tile.png");
+  background-repeat: repeat;
+}
+
+.white-bg {
+    background-color: white;
+}
+
+.centered {
+  margin: 0 auto;
+  width: 870px;
+  position: relative;
+}
+
+.top-bar {
+    height: 2.4em;
+    background-color: #10C5C5;
+}
+
+.title-sep {
+    margin-left: 3px;
+}
+
+.top-section {
+    height: 21em;
+    padding-top: 30px;
+}
+
 .signup-overlay {
     position: absolute;
-    background: white;
-    /*border: 1px solid black;*/
     border-top: 0px;
     width: 21em;
-    top: 0;
-    left: 51%;
+    top: 0px;
+    left: 435px; /* 200 padding + half width of 870 = 635 */
     height: 21em;
     padding: 0 20px;
     padding-top: 4.2em;
     background-color: #FBB77F;
-    background-image: url("../img/tile.png");
-    background-repeat: repeat;
     text-align: center;
+}
+
+.half-page-width {
+  width: 435px;
 }
 
 .hp-l, .hp-r {
@@ -180,17 +173,6 @@ h3, .smalltext {
     left: 50%;
 }
 
-.signup, .bottom-section {
-    background-color: #10C5C5;
-    background-image: url("../img/tile.png");
-    background-repeat: repeat;
-
-    padding: 0 200px;
-    height: 13em;
-    padding-top: 0.8em;
-}
-
-
 .signup-button {
     background-color:white;
     border:1px solid;
@@ -201,10 +183,6 @@ h3, .smalltext {
     font-weight:bold;
     padding:4px 24px;
     height: 2.4em;
-}
-
-.quick-look {
-    height: 10em;
 }
 
 .signup-form {
@@ -223,32 +201,6 @@ h3, .smalltext {
     font-size: 0.9em;
     width: 30%;
 }
-
-
-.quick-features {
-    width: 100%;
-}
-
-.feature {
-    width: 33%;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.feature-inner {
-    margin: 0px 20px;
-}
-
-.feature > h2 {
-    top: 0px;
-}
-
-.separator {
-    background-color: #022636;
-    width: 100%;
-    height: 2px;
-}
-
 
 .form-input {
     display: block;
@@ -277,13 +229,14 @@ h3, .smalltext {
 .arrow-img {
   display: block;
   margin: 0 auto;
-    padding-right: 130px;
-    height: 115px;
+  padding-right: 130px;
+  height: 115px;
 }
 
 .how-it-works {
-    height: 13em;
+  padding-top: 50px;
 }
+
 
 .button {
     width: 21em !important;
@@ -339,15 +292,11 @@ h3, .smalltext {
 
 
 .step-icon {
-    /*border-radius: 50%;
-    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
-
     width: 1em;
     height: 1em;
     padding: 8px;
     
     background: #fff;
-    /*border: 2px solid #666;*/
     color: white;
     text-shadow: #000000 1px 1px 1px;
     text-align: center;
@@ -361,89 +310,19 @@ h3, .smalltext {
 .step {
     display: inline-block;
     width: 33%;
+    vertical-align: top;
 }
 
 .step-header {
     width: 70%;
     margin-left: 10px;
     display: inline-block;
+    height: 48px;
+    vertical-align: top;
 }
 
-
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden {
-    display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
+.channel-example {
+  padding-top: 3px;
 }
 
 /* ==========================================================================
