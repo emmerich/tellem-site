@@ -109,13 +109,13 @@ h2 {
 }
 
 .h2-lbg {
-    color: #150C82;
+    color: #405B84;
     text-shadow: 1px 1px 1px #B7B1FF;
 }
 
 .h2-dbg {
-    color: #150C82;
-    text-shadow: 1px 1px 1px #B7B1FF;
+    color: white;
+    text-shadow: 1px 1px 1px black;
 }
 
 h3, .smalltext {
@@ -126,11 +126,11 @@ h3, .smalltext {
 }
 
 .whitetext {
-    color: black;
+    color: white;
 }
 
 .bg {
-    background-color: #D2EDF5;
+    background-color: #405B84;
 }
 
 .grain-effect {
@@ -220,12 +220,11 @@ h3, .smalltext {
 .button {
     width: 100%;
     border: 1px solid #5F5F5F;
-    background: #FFDF95;
+    background: #388072;
     padding: 10.5px 21px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
-    color: #000;
     font-size: 1.1em;
     font-family: Arial, sans-serif;
     font-weight: bold;
