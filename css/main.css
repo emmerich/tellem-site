@@ -109,7 +109,7 @@ h2 {
 }
 
 .h2-lbg {
-    color: #405B84;
+    color: #425879;
     text-shadow: 1px 1px 1px #B7B1FF;
 }
 
@@ -130,7 +130,7 @@ h3, .smalltext {
 }
 
 .bg {
-    background-color: #405B84;
+    background-color: #425879;
 }
 
 .grain-effect {
@@ -220,7 +220,7 @@ h3, .smalltext {
 .button {
     width: 100%;
     border: 1px solid #5F5F5F;
-    background: #388072;
+    background: #FFAE36;
     padding: 10.5px 21px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
@@ -231,7 +231,7 @@ h3, .smalltext {
 }
 
 .button:hover {
-    background: #FFAE36;
+    background: #FFC775;
     cursor: pointer;
 }
 
