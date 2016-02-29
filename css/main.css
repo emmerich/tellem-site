@@ -84,67 +84,83 @@ textarea {
     padding: 0.2em 0;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
 
 body {
-    font-family: 'Palanquin', Helvetica, Arial, sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
-    min-width: 870px;
-}
-
-body, html {
-  height: 100%;
-}
-
-h1 {
-    margin: 0;
-    display: inline-block;
-    font-size: 1.5em;
-    color: #FFA052;
-    text-shadow: 1px 1px 1px #693C18;
-}
-
-h2 {
-    margin: 0;
-    font-size: 1.5em;
-    color: #007C7C;
-    text-shadow: 1px 1px 1px #B1D8D8;
-}
-
-/* auto margin on outside, not px */
-
-h3, .smalltext {
-    font-size: 0.9em;
-    color: #5F5F5F;
-    font-weight: bold;
-}
-
-.grain-effect {
-  background-image: url("../img/tile.png");
-  background-repeat: repeat;
-}
-
-.white-bg {
     background-color: white;
 }
 
+body, html {
+    height: 100%;
+}
+
+h1 {
+    font-size: 1.5em;
+    font-family: "Palanquin", Arial, sans-serif;
+    margin: 0;
+    display: inline-block;
+    color: #FF9901;
+    text-shadow: 1px 1px 1px #462810;
+}
+
+h2 {
+    font-family: "Palanquin", Arial, sans-serif;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.h2-lbg {
+    color: #150C82;
+    text-shadow: 1px 1px 1px #A5A7A7;
+}
+
+.h2-dbg {
+    color: #FFB74D;
+    text-shadow: 1px 1px 1px black;
+}
+
+h3, .smalltext {
+    font-size: 0.9em;
+
+    color: #5F5F5F;
+    font-weight: normal;
+}
+
+.whitetext {
+    color: #BDB0B0;
+}
+
+.grain-effect {
+    background-image: url("../img/tile.png");
+    background-repeat: repeat;
+}
+
 .centered {
-  margin: 0 auto;
-  width: 860px;
-  position: relative;
-  padding-left: 5px;
-  padding-right: 5px;
+    margin: 0 auto;
+    width: 760px;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .top-bar {
-    height: 2.4em;
-    background-color: #10C5C5;
+    height: 38px;
+    background-color: #150C82;
 }
 
 .title-sep {
     margin-left: 3px;
+}
+
+.half-page {
+    width: 380px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.main-container {
+    padding-top: 20px;
 }
 
 .top-section {
@@ -153,59 +169,21 @@ h3, .smalltext {
 }
 
 .signup-overlay {
-    position: absolute;
-    border-top: 0px;
-    width: 21em;
-    top: -68px;
-    left: 430px;
-    height: 21em;
+    position: relative;
+    width: 290px;
+    margin: 0 auto;
     padding: 0 20px;
-    padding-top: 4.2em;
-    background-color: #FBB77F;
+
+    /* Bring the top up so that the overlay goes over the title bar */
+    top: -58px; /* top-bar = 38px + 20px padding = 58 */
+
+    /* Add padding so the content of the overlay stays in the right place */
+    padding-top: 58px;
+
+    height: 360px;
+    
+    background-color: #150C82;
     text-align: center;
-}
-
-.half-page-width {
-  width: 435px;
-}
-
-.hp-l, .hp-r {
-    width: 50%;
-    display: inline-block;
-    height: 20px;
-}
-
-.hp-r {
-    left: 50%;
-}
-
-.signup-button {
-    background-color:white;
-    border:1px solid;
-    display:inline-block;
-    cursor:pointer;
-    color:#000000;
-    font-size:15px;
-    font-weight:bold;
-    padding:4px 24px;
-    height: 2.4em;
-}
-
-.signup-form {
-    width: 100%;
-    font-size: 1.17em;
-}
-
-.signup-email {
-    width: 60%;
-    font-size: 0.9em;
-    height: 31px;
-    margin-right: 5px;
-}
-
-.signup-button {
-    font-size: 0.9em;
-    width: 30%;
 }
 
 .form-input {
@@ -239,76 +217,41 @@ h3, .smalltext {
   height: 115px;
 }
 
-section.how-it-works {
-    height: 7em;
+.button {
+    width: 100%;
+    border: 1px solid #5F5F5F;
+    background: #FF9800;
+    padding: 10.5px 21px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    color: #000;
+    font-size: 1.1em;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
 }
 
-.button {
-    width: 21em !important;
-   border: 1px solid #5F5F5F;
-   background: #007a7a;
-   background: -webkit-gradient(linear, left top, left bottom, from(#27b3a0), to(#007a7a));
-   background: -webkit-linear-gradient(top, #27b3a0, #007a7a);
-   background: -moz-linear-gradient(top, #27b3a0, #007a7a);
-   background: -ms-linear-gradient(top, #27b3a0, #007a7a);
-   background: -o-linear-gradient(top, #27b3a0, #007a7a);
-   background-image: -ms-linear-gradient(top, #27b3a0 0%, #007a7a 100%);
-   padding: 10.5px 21px;
-   -webkit-border-radius: 6px;
-   -moz-border-radius: 6px;
-   border-radius: 6px;
-   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
-   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
-   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
-   text-shadow: #000000 1px 1px 1px;
-   color: #ffffff;
-   font-size: 14px;
-   font-family: helvetica, serif;
-   text-decoration: none;
-   vertical-align: middle;
-   }
 .button:hover {
-   border: 1px solid #5F5F5F;
-  text-shadow: #000000 1px 1px 1px;
-   background: #2c8282;
-   background: -webkit-gradient(linear, left top, left bottom, from(#21b89f), to(#2c8282));
-   background: -webkit-linear-gradient(top, #21b89f, #2c8282);
-   background: -moz-linear-gradient(top, #21b89f, #2c8282);
-   background: -ms-linear-gradient(top, #21b89f, #2c8282);
-   background: -o-linear-gradient(top, #21b89f, #2c8282);
-   background-image: -ms-linear-gradient(top, #21b89f 0%, #2c8282 100%);
-   color: #fff;
-   cursor: pointer;
-   }
+    background: #FFAE36;
+    cursor: pointer;
+}
+
 .button:active {
-   text-shadow: #000000 1px 1px 1px;
-   border: 1px solid #5F5F5F;
-   background: #1aa38a;
-   background: -webkit-gradient(linear, left top, left bottom, from(#2c8282), to(#2c8282));
-   background: -webkit-linear-gradient(top, #2c8282, #1aa38a);
-   background: -moz-linear-gradient(top, #2c8282, #1aa38a);
-   background: -ms-linear-gradient(top, #2c8282, #1aa38a);
-   background: -o-linear-gradient(top, #2c8282, #1aa38a);
-   background-image: -ms-linear-gradient(top, #2c8282 0%, #1aa38a 100%);
-   color: #fff;
-   }
-
-
-
+    background: #FFA622;
+}
 
 .step-icon {
     width: 1em;
     height: 1em;
     padding: 8px;
     
-    background: #fff;
-    color: white;
+    color: #fff;
     text-shadow: #000000 1px 1px 1px;
     text-align: center;
-    background-color: #007C7C;
+    background-color: #150C82;
     
     font-size: 2em;
-    line-height: 0.9em;
+    line-height: 1em;
     display: inline-block;
 }
 
@@ -336,8 +279,58 @@ section.how-it-works {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+/** At this width it's no longer possible to show everything side by side, so
+    move to a stacked layout. */
+@media only screen and (max-width: 760px) {
+
+    body {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    h3, .smalltext {
+        font-size: 0.8em;
+    }
+
+    .main-container {
+        padding-top: 10px;
+    }
+
+    .centered {
+        width: 100%;
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /** Half page elements become full page*/
+    .half-page {
+        width: 100%;
+        display: block;
+        margin: 0;
+    }
+
+    .signup-overlay {
+        top: 0px;
+        padding-top: 10px;
+        margin: 0;
+        width: auto;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+
+    /** It doesn't make sense to show the arrow */
+    .arrow-img {
+        display: none;
+    }
+
+    .step-by-step {
+        display: none;
+    }
 }
 
 @media print,
